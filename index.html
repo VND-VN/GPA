@@ -7,12 +7,12 @@
 
 </head>
 <body>
-  <h1>Chuyển đổi</h1>
+  <h1>Convert GPA</h1>
 
   <div id="courses">
     <div class="course">
       <label for="course1GPA">Course 1 GPA (out of 10):</label>
-      <input type="number" class="originalGPA" min="0" max="10" step="0.01" required oninput="calculateIndividualGPA(this)">
+      <input type="number" class="originalGPA" min="0" max="10" step="0.1" required oninput="calculateIndividualGPA(this)">
       <label for="course1Credits">Credits:</label>
       <input type="number" class="credits" min="1" required>
       <span class="convertedGPA"></span>

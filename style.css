@@ -5,12 +5,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
-.container {
-  width: 1280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 h1 {
   text-align: center;

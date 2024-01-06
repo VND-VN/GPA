@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Convert GPA</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>GPA Converter</h1>
+
+  <div id="courses">
+    <div class="course">
+      <label for="course1GPA">Course 1 GPA (out of 10):</label>
+      <input type="number" class="originalGPA" min="0" max="10" step="0.01" required oninput="calculateIndividualGPA(this)">
+      <label for="course1Credits">Credits:</label>
+      <input type="number" class="credits" min="1" required>
+      <span class="convertedGPA"></span>
+      <button onclick="removeCourse(this)">Remove</button>
+    </div>
+  </div>
+
+  <button onclick="addCourse()">Add Course</button>
+  <button onclick="calculateTotalGPA()">Convert</button>
+  <p>Your GPA (out of 4) is: <span id="totalGPA"></span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
